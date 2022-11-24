@@ -1,0 +1,44 @@
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+.favorites {
+  margin: 0px 25px;
+  align-items: center;
+  padding: 0;
+}
+.btn {
+  border-radius: 50%;
+  align-items: center;
+  margin: 0px;
+  display: flex;
+  cursor: pointer;
+}
+
+@keyframes slide {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-5px, 0px);
+  }
+}
+
+.arrow-left,
+.arrow-right {
+  transition: all 0.2s linear;
+}
+
+.arrow-left:hover {
+  animation: slide 0.4s linear infinite;
+}
+.arrow-right:hover {
+  animation: slide 0.4s linear infinite reverse;
+}
+
+.page {
+  margin: 0 6px;
+}

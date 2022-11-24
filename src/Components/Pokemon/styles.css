@@ -1,0 +1,85 @@
+.pokemon-card {
+  display: flex;
+  box-shadow: 4px 4px 4px (0, 0, 0.25);
+  border-radius: 3px;
+  transform-style: preserve-3d;
+  perspective: 700px;
+  transition: transform 0.4s;
+}
+.pokemon-card:hover {
+  transform: scale(1.02);
+}
+.pokemon-image {
+  width: 100px;
+  height: 100px;
+  object-fit: none;
+  border-radius: 50%;
+  box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  flex: 1;
+  border-radius: 25px 5px 25px;
+}
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  user-select: none;
+  cursor: default;
+}
+.left-content h3 {
+  text-transform: capitalize;
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  user-select: none;
+  cursor: default;
+}
+.pokemon-heart-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideHeart {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -5px);
+  }
+}
+.pokemon-heart-btn:hover {
+  animation: slideHeart 0.4s linear infinite;
+}
+.pokemon-heart-btn:active {
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transform: translateX(2px);
+}
+.pokemon-type {
+  display: flex;
+}
+.wrapper-type {
+  display: flex;
+  flex-direction: row;
+}
+.pokemon-type-text {
+  flex-direction: row;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
