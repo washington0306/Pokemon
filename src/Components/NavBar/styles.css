@@ -8,6 +8,11 @@ nav {
   padding: 8px 0;
 }
 
+nav p{
+  font-size: 10px;
+  
+}
+
 .navbar-img {
   width: 160px;
 }

@@ -7,6 +7,7 @@ const NavBar = () => {
   return (
     <nav>
       <img alt="logo-pokeapi" src={logoImg} className="navbar-img" />
+      <p>José Washington</p>
     </nav>
   );
 };
